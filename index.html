@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
+
+        <title>Word Root Game</title>
+
+    </head>
+    <body onload="loadanim()">
+        
+        <div class="anim1" id="cred">
+
+            <h1>Word Root Game</h1>
+            <h3>By: Matthew West</h3>
+
+        </div>
+
+        <div class="game" id="theGame">
+
+            <h1 id="gameRoot">Press ME To Start</h1>
+            <p id="instruct"></p>
+
+            <form id="form" action="" onsubmit="return false">
+                <input id="input" autocomplete="off" /><button onclick="check()">SEND</button>
+            </form>
+
+        </div>
+
+        <script src="word-list.js"></script>
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

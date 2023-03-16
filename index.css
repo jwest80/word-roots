@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body { font-family: 'Roboto', sans-serif; }
+
+#cred {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.anim1 {
+    -webkit-animation-name: anim1;
+    -webkit-animation-duration: 1s;
+    animation-name: anim1;
+    animation-duration: 1s
+}
+
+.anim2 {
+    -webkit-animation-name: anim2;
+    -webkit-animation-duration: 1s;
+    animation-name: anim2;
+    animation-duration: 1s
+}
+
+.anim3 {
+    -webkit-animation-name: anim3;
+    -webkit-animation-duration: 1s;
+    animation-name: anim3;
+    animation-duration: 1s
+}
+
+#theGame {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    visibility: hidden;
+}
+
+#form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+#input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+#input:focus { outline: none; }
+#form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+
+#gameRoot {
+    border: none;
+    background-color: white;
+}
+
+@-webkit-keyframes anim1 {
+    from { top:100px; opacity:0 } 
+    to { top:0; opacity:1 }
+}
+
+@keyframes anim1 { 
+    from{ top:100px; opacity:0 } 
+    to{ top:0px; opacity:1 }
+}
+
+@-webkit-keyframes anim2 {
+    from { top:0; } 
+    to { top:-200px; }
+}
+
+@keyframes anim2 { 
+    from{ top:0; } 
+    to{ top:-200px; }
+}
+
+@-webkit-keyframes anim3 {
+    from { top: 0; opacity:0 } 
+    to { top: -100px;; opacity:1 }
+}
+
+@keyframes anim3 { 
+    from{ top:0; opacity:0 } 
+    to{ top: -100px; opacity:1 }
+}
